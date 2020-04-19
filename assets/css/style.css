@@ -185,7 +185,8 @@ input[type=submit]:active {
 
 header {
     height: 100vh;
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("img/hero.jpg");
+    background-image: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url("img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("img/hero.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
