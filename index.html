@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
-    <link rel="stylesheet" href="vendors\css\normalize.css">
-    <link rel="stylesheet" href="vendors\css\grid.css">
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
-    <link rel="stylesheet" type="text/css" href="assets\css\queries.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
+    <script defer src="assets/js/app.js"></script>
+
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
 </head>
 
 <body>
@@ -18,22 +34,23 @@
         <nav>
             <div class="row">
                 <img class="logo" src="assets/img/logo-white.png" alt="Omnifood">
+                <img class="logo-black" src="assets/img/logo.png" alt="Omnifood">
                 <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sing up</a></li>
+                    <li><a href="#future">Food delivery</a></li>
+                    <li><a href="#work">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#singup">Sing up</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full" href="#singup">I’m hungry</a>
+            <a class="btn btn-ghost" href="#future">Show me more</a>
         </div>
     </header>
 
-    <section class="future-section">
+    <section class="future-section future-section--js" id="future">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-text">
@@ -41,7 +58,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon name="today-outline" class="big-icon"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -119,13 +136,13 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="work">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 step-box">
-                <img src="assets/img/app-iPhone.png" alt="iPhone screen" class="app-screen">
+                <img src="assets/img/app-iPhone.png" alt="iPhone screen" class="app-screen wp-2">
             </div>
             <div class="col span-1-of-2 step-box">
                 <div class="work-steps">
@@ -146,12 +163,12 @@
         </div>
     </section>
 
-    <section class="cities">
+    <section class="cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
 
-        <div class="row">
+        <div class="row wp-3">
             <div class="col span-1-of-4 box">
                <img src="assets/img/lisbon-3.jpg" alt="Lisbon">
                <h3>Lisbon</h3>
@@ -251,11 +268,11 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans" id="singup">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
-        <div class="row">
+        <div class="row wp-4">
             <div class="col span-1-of-3">
                 <div class="plan-box">
                     <div>
@@ -409,6 +426,8 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="vendors/js/jquery-3.5.0.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
